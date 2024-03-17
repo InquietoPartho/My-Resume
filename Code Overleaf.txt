@@ -1,0 +1,327 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Pijush Kanti Roy Partho} \\ \vspace{1pt}
+    Dinajpur-5200,Rangpur \\ \vspace{1pt}
+    \small \href{tel:#}{ \raisebox{-0.1\height}\faPhone\ \underline{+880182-2212847} ~} \href{mailto:pijushkantiroy2040@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{pijushkantiroy2040@gmail.com}} ~ 
+    \href{https://linkedin.com/in/urslovelypartho}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{Linkedin}}  ~
+    \href{https://github.com/InquietoPartho }{\raisebox{-0.2\height}\faGithub\ \underline{Github}} ~
+    \href{https://codeforces.com/profile/Thunderbold}{\raisebox{-0.2\height}{\includegraphics[height=0.3cm, width=0.3cm]{codeforces.jpg}}\ \underline{Codeforces}} ~
+    \vspace{-8pt}
+    \href{https://leetcode.com/Thunderbold}{\raisebox{-0.2\height}{\includegraphics[height=0.3cm, width=0.3cm]{leetcode.png}}\ \underline{LeetCode}} ~
+    \vspace{-8pt}
+\end{center}
+ \vspace{0.5mm}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Hajee Mohammad Danesh Science And Technology University}{2022 – 2026}
+      {B.Sc(Engineering) in - Electronics And Communication Engineering- \textbf{CGPA} - \textbf{3.54}}{Dinajpur 5200, Rangpur}
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Hamdard Public College}{07 2018 -- 06 2020}
+      {Higher Secondary Certificate - Science  - \textbf{GPA} - \textbf{5.00}}{Dhaka, Bangladesh}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{COURSEWORK / SKILLS}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item Data Structure and Algorithms (DSA)
+                \item Machine Learning
+                \item Deep Learning
+                \item Oops Concepts
+                \item Software Engineering
+                \item C++
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+% %-------------Experience-----------
+% \section{EXPERIENCE}
+%     \vspace{-5pt}
+%     \resumeSubHeadingListStart
+
+%       \resumeProjectHeading
+%           
+          
+          
+%     \resumeSubHeadingListEnd
+% \vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \vspace{5pt}
+          \resumeProjectHeading
+          {\href{https://github.com/InquietoPartho/Object_Oriented_Programming/blob/master/Banking_projects.cpp}{\textbf{\large{\underline{Banking System}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Oops and DSA}}}{2024}\\
+          \resumeItemListStart
+            \resumeItem{\normalsize{Application to provide banking solution to Banks to manage customer accounts.}}
+            \resumeItem{\normalsize{Accounts can be created and manged. Implemented many function related to banking system.}}
+            \resumeItem{\normalsize{ Operations like deposite and withdrawal can be performed in the account.}}
+            
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+          
+          
+      \resumeProjectHeading
+          {\href{https://github.com/InquietoPartho/ML-Projects}{\textbf{\large{\underline{Friday AI \textbf{My Personal Assistant}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Python3, Random Forest Algorithm}}}{2019-20}\\
+          \resumeItemListStart
+             \resumeItem{\normalsize{Develop the \textbf{front-end} of Friday Interface using GUI.}}
+            \resumeItem{\normalsize{Module Consists of 4-5 different types of dictionaries that helps users with different functionalities.}}
+            \resumeItem{\normalsize{Added \textbf{10-12 new features} like organize the user interface of the Module's \textbf{Home Page}}}
+            \resumeItem{\normalsize{Handle the database and integrated the module with other existing modules.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+        % \resumeProjectHeading
+        %   {\href{https://github.com/FusionIIIT/Fusion/tree/main/FusionIIIT/applications/counselling_cell}{\textbf{\large{\underline{Counselling Cell - \textbf{Fusion IIIT}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{HTML, CSS, Django, PostgreSQL}}}{2021-22}
+        %   \resumeItemListStart
+        %      \resumeItem{\normalsize{Develop the \textbf{front-end} of Counselling Cell module in Fusion IIIT.}}
+        %     \resumeItem{\normalsize{Module Consists of 4-5 different types of users with different functionalities.}}
+        %     \resumeItem{\normalsize{Added \textbf{10-12 new features} like organize the user interface of the Module's \textbf{Home Page}}}
+        %     \resumeItem{\normalsize{Handle the database and integrated the module with other existing modules.}}
+        %   \resumeItemListEnd
+        %   \vspace{-13pt}
+          
+        \resumeProjectHeading
+          {\href{https://github.com/InquietoPartho/Machine-Learning-Deep-Learning/blob/main/Sentimenal_Analysis.ipynb}{\textbf{\large{\underline{\textbf{Sentiment Analysis}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Python3, HTML, CSS, MySql, SQL, Xampp}}}{2022}\\
+          \resumeItemListStart
+             \resumeItem{\normalsize{Develop the website in which any kind of text can be analyzed by their sentiments}}
+            \resumeItem{\normalsize{After executing it will preview the average percentage of the different kinds of sentiments.}}
+
+          \resumeItemListEnd
+          
+          
+
+          
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%
+
+
+%-----------EXPERIENCE-----------
+% \section{INTERNSHIP}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {Company Name \href{certificate Link}{\raisebox{-0.1\height}\faExternalLink }}{MM YYYY -- MM YYYY} 
+%       {\underline{Role Name}}{city, country}
+%       \resumeItemListStart
+%         \resumeItem{\normalsize{About the role \textbf{and responsibilities carried out.}}}
+  
+%       \resumeItemListEnd  
+%   \resumeSubHeadingListEnd
+% \vspace{-12pt}
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{  \normalsize{C++, C, Java, Python}} \\
+     \textbf{\normalsize{Technologies/Frameworks:}}{  \normalsize{Machine Learning, Deep Learning, Android, Flutter, Dart, Django}} \\
+     \textbf{\normalsize{Developer Tools:}}{  \normalsize{VS Code, PyCharm, Docker, Google Colab, Canva }} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Coding Platforms}
+\resumeSubHeadingListStart
+    \resumeItemListStart
+        \resumeItem{\textbf{Leetcode:} \textbf Solved \textbf{10+} Problems
+        \href{https://leetcode.com/Thunderbold/}{\raisebox{-0.1\height}{\faExternalLink}}}
+        % % \resumeItem{\textbf{GeeksforGeeks and InterviewBit:} Solved 500+ Problems
+        % \href{https://auth.geeksforgeeks.org/user/aman_2_0_2_3/practice}{\raisebox{-0.1\height}{\faExternalLink}}}
+        \resumeItem{\textbf{Codeforces:} Max Rating 1079
+        \href{https://codeforces.com/profile/Thunderbold}{\raisebox{-0.1\height}{\faExternalLink}}}
+        % \resumeItem{\textbf{Participation Certificate}
+        % \href{ParticipationCertificateLink.com}{\raisebox{-0.1\height}{\faExternalLink}}}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-11pt}
+
+
+ 
+  %-----------CERTIFICATIONS---------------
+\section{CERTIFICATIONS}
+
+$\sbullet[.75] \hspace{0.1cm}$ {\href{https://www.coursera.org/specializations/machine-learning-introduction/}{Machine Learning Specialization - Coursera and DeepLearning.AI}} \hspace{2.59cm}\\
+$\sbullet[.75] \hspace{0.1cm}$ {\href{https://www.coursera.org/specializations/data-structures-algorithms/}{Data Structures and Algorithms Specialization - Coursera, University of California San Diego  }} \hspace{1.6cm}\\
+$\sbullet[.75] \hspace{0.2cm}${\href{https://www.coursera.org/specializations/coding-for-everyone} {Coding for Everyone: C and C++ Specialization - Coursera, University of California, Santa Cruz}}\hspace{1.6cm}\\
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{Graph data structure for CP - Udemy}} \hspace{1cm}\\
+
+
+
+
+ \section{EXTRACURRICULAR}
+    \resumeSubHeadingListStart
+        % \resumeSubheading{Organization Name \href{Certificate Proof link}{\raisebox{-0.1\height}\faExternalLink } }{05-2021 -- 12-2021}{\underline{Role}}{Location}
+        
+            \resumeItemListStart
+                \resumeItem{\normalsize{National Champion, National Child and Teenager Programming Contest 2018}}
+                \resumeItem{\normalsize{Trainer at the seminer of Introduction to VS Code, Git & Github, Hosted By Microsoft Learn Student Ambassadors Bangladesh}}
+                \resumeItem{\normalsize{President Scout and Association of top Achiever Scouts Bangladesh Member from 2016 to till now }}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ \vspace{-11pt}
+ 
+ \end{document}
+ 
